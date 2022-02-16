@@ -5,4 +5,4 @@
 • Nombre de tirages du 5 
 • Nombre de tirages de la somme 10 
 • Somme obtenue le plus souvent
-1. Réalisé en 2020
+1. Réalisé en novembre 2020, par THIAM Pape Mayel Diagne.
