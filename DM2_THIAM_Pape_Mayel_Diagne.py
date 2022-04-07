@@ -34,84 +34,7 @@ def simulationTirage(N,tab):
     for cpt in range(0,N):
         deR = randint(1,6)
         deN = randint(1,6)
-
-        if deR == 1 and deN == 1:
-            tab[1,1] += 1
-        if deR == 1 and deN == 2:
-            tab[1,2] += 1
-        if deR == 1 and deN == 3:
-            tab[1,3] += 1
-        if deR == 1 and deN == 4:
-            tab[1,4] += 1
-        if deR == 1 and deN == 5:
-            tab[1,5] += 1
-        if deR == 1 and deN == 6:
-            tab[1,6] += 1
-
-        if deR == 2 and deN == 1:
-            tab[2,1] += 1
-        if deR == 2 and deN == 2:
-            tab[2,2] += 1
-        if deR == 2 and deN == 3:
-            tab[2,3] += 1
-        if deR == 2 and deN == 4:
-            tab[2,4] += 1
-        if deR == 2 and deN == 5:
-            tab[2,5] += 1
-        if deR == 2 and deN == 6:
-            tab[2,6] += 1
-
-        if deR == 3 and deN == 1:
-            tab[3,1] += 1
-        if deR == 3 and deN == 2:
-            tab[3,2] += 1
-        if deR == 3 and deN == 3:
-            tab[3,3] += 1
-        if deR == 3 and deN == 4:
-            tab[3,4] += 1
-        if deR == 3 and deN == 5:
-            tab[3,5] += 1
-        if deR == 3 and deN == 6:
-            tab[3,6] += 1
-
-        if deR == 4 and deN == 1:
-            tab[4,1] += 1
-        if deR == 4 and deN == 2:
-            tab[4,2] += 1
-        if deR == 4 and deN == 3:
-            tab[4,3] += 1
-        if deR == 4 and deN == 4:
-            tab[4,4] += 1
-        if deR == 4 and deN == 5:
-            tab[4,5] += 1
-        if deR == 4 and deN == 6:
-            tab[4,6] += 1
-
-        if deR == 5 and deN == 1:
-            tab[5,1] += 1
-        if deR == 5 and deN == 2:
-            tab[5,2] += 1
-        if deR == 5 and deN == 3:
-            tab[5,3] += 1
-        if deR == 5 and deN == 4:
-            tab[5,4] += 1
-        if deR == 5 and deN == 5:
-            tab[5,5] += 1
-        if deR == 5 and deN == 6:
-            tab[5,6] += 1
-
-        if deR == 6 and deN == 1:
-            tab[6,1] += 1
-        if deR == 6 and deN == 2:
-            tab[6,2] += 1
-        if deR == 6 and deN == 3:
-            tab[6,3] += 1
-        if deR == 6 and deN == 4:
-            tab[6,4] += 1
-        if deR == 6 and deN == 5:
-            tab[6,5] += 1
-        if deR == 6 and deN == 6:
-            tab[6,6] += 1
+        tab[deR,deN] +=1
     print("\nNombre de tirages (Dé Rouge, Dé Noire) sur {} lancers.".format(N))
     print("Dé Rouge (faces suivant la verticale à gauche) et Dé Noir (faces suivant l'horizontale en haut)")
     print(tab)
@@ -207,7 +130,6 @@ nbTirageFace()
 (tabTirageSommeFace,s,s2,s3,s4,s5,s6,s7,s8,s9,s10,s11,s12) = nbTirageSommeFace()
 sommeObP_souv()
 moy = moySomme()
-
 
 
 
